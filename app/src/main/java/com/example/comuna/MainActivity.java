@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+/*
         int i1 =2;
         int i2 =322;
         int i3 = i1/i2;
@@ -39,10 +39,12 @@ public class MainActivity extends AppCompatActivity {
         int b = a.length();
         Log.e("XXXXXXXX", "res"+b);
 
+ */
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                //Obtener_VariableSesion();
+                Obtener_VariableSesion();
             }
 
         }, SPLASH_DISPLAY_LENGTH);
