@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Comuna</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_registro_usuario">registroUsuario</string>
+    <string name="title_activity_registro_persona">registroPersona</string>
+    <string name="title_activity_inicio_sesion">inicioSesion</string>
+    <string name="title_activity_menu_principal">menuPrincipal</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_registrar_noticia">registrarNoticia</string>
+    <string name="title_activity_registrar_evento">registrarEvento</string>
+    <string name="title_activity_mapa">mapa</string>
+</resources>

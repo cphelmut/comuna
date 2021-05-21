@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".registrarEvento"
+    tools:showIn="@layout/activity_registrar_evento">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:id="@+id/edt_nombreEvento_ATVRegistrarEventos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre Noticia" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:weightSum="10">
+            <EditText android:id="@+id/edt_fechaInicio_ATVRegistrarEventos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Fecha Incio"
+                android:layout_weight="8"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seleccionar Fecha"
+                android:id="@+id/btn_fechaInicio_ATVRegistrarEvento"
+                android:layout_toRightOf="@+id/edt_fechaInicio_ATVRegistrarEventos"
+                android:layout_weight="2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:weightSum="10">
+            <EditText android:id="@+id/edt_posicion_ATVRegistrarEventos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Posicion"
+                android:layout_weight="8"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seleccionar Lugar"
+                android:id="@+id/btn_mapa_ATVRegistrarEventos"
+                android:layout_toRightOf="@+id/txt_posicion_ATVRegistrarEventos"
+                android:layout_weight="2"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/LNY_ImagenNoticia_ATVRegistrarEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <Button
+                android:id="@+id/btn_abrirGaleriaEvento_ATVRegistrarEventos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abrir Galeria"
+                android:layout_weight="2"/>
+
+            <ImageView
+                android:id="@+id/imv_imagenEvento_ATVRegistrarEventos"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="8"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:id="@+id/edt_descripcionEvento_ATVRegistrarEventos"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="top"
+                android:hint="Descripcion"
+                android:padding="2dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_registrarEvento_ATVRegistrarEventos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="Registrar Evento"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
